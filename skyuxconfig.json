@@ -1,0 +1,8 @@
+{
+  "name": "helptest",
+  "mode": "easy",
+  "compileMode": "aot",
+  "help": {
+    "extends": "renxt"
+  }
+}
