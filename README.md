@@ -9,6 +9,7 @@ to run locally
 - `npm install`
 - update the import link for `help-client` in the
 `node_modules/@blackbaud/skyux-builder/src/app/app.component.ts` file to use
-`import { BBHelp } from '../../../../../src/mock_node_modules/help-client';`
+`import { BBHelpClient } from '../../../../../src/mock_node_modules/help-client';`
+- Update all references to `BBHelp` in this file to use `BBHelpClient`.
 
 - `skyux serve`
