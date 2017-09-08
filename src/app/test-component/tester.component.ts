@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { BBHelpClientService } from '../../mock_node_modules/bb-help';
+import { HelpWidgetService } from '@blackbaud/skyux-lib-help';
 
 @Component({
   selector: 'tester-button',
@@ -9,9 +9,9 @@ export class TesterComponent {
   @Input()
   private helpKey: string;
 
-  constructor(private helpService: BBHelpClientService) { }
+  constructor(private helpService: HelpWidgetService) { }
 
   public publicOnClickMethod() {
-    this.helpService.openWidgetToHelpKey(this.helpKey);
+    this.helpService.openToHelpKey(this.helpKey);
   }
 }
